@@ -1,0 +1,32 @@
+{
+  "student": [
+    {
+      "name": "Ilkiin",
+      "surname": "Ismayilov",
+      "age": 24,
+      "username": "IlkinX",
+      "password": 9477
+    },
+    {
+      "name": "elvin",
+      "surname": "hesenov",
+      "age": 23,
+      "username": "elvinA",
+      "password": 1234
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Samir",
+      "surname": "Kerimov",
+      "username": "kerimovs",
+      "password": 7777
+    },
+    {
+      "name": "Veli",
+      "surname": "Eliyev",
+      "username": "eliyevs",
+      "password": 1919
+    }
+  ]
+}

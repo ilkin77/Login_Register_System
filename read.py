@@ -4,9 +4,8 @@ from functions import readData
 def reading():
 
     readData()
-
     data = readData()
-    # print("data : ", data)
+
     print("""Student information -> 1
 Teachers information 2""")
     info = int(input("press 1 or 2 : "))

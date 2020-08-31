@@ -6,7 +6,6 @@ def deleting():
     readData()
 
     data = readData()
-    #print("data read : ", data)
 
     oldpass = int(input("write password : "))
 
@@ -16,7 +15,6 @@ def deleting():
 
     sleep(2)
     print("Melumat silindi...")
-   # print(data)
 
     with open("database.json", "w") as conn:
         json.dump(data, conn)

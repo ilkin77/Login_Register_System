@@ -1,14 +1,10 @@
 import json
 from functions import readData
 
-
-
 def Writing():
 
     readData()
-
     data = readData()
-    #print("data : ", data)
 
     def getDataFromUser():
         print("Add student")
@@ -17,7 +13,6 @@ def Writing():
         age = int(input("age : "))
         username = input("username : ")
         password = int(input("password : "))
-
 
         students = {
             "name": name,

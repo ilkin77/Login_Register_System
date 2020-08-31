@@ -6,7 +6,6 @@ def updating():
     readData()
 
     data = readData()
-    #print("data read : ", data)
 
     oldpass = int(input("old password daxil edin : "))
     newpass = int(input("new password : "))

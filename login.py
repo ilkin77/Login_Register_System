@@ -3,8 +3,15 @@ from write import *
 from delete import *
 from update import *
 
-def login():
+# continue or break program
+def isContinue():
+    yesOrNo = input("Do you want to continue? yes / no : ")
+    if yesOrNo == "yes":
+        login()
+    else:
+        print("Byeee...")
 
+def login():
 
     print("""Menu
     Telebeleri gormek             -> 1
@@ -19,12 +26,16 @@ def login():
     try:
         if order == "1":
             reading()
+            isContinue()
         elif order == "2":
             Writing()
+            isContinue()
         elif order == "3":
             deleting()
+            isContinue()
         elif order == "4":
             updating()
+            isContinue()
         elif order == "5":
             pass
         else:

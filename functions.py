@@ -6,8 +6,6 @@ def readData():
         return json.load(conn)
 
 
-
-
 # show student information by name
 
 def reading():
@@ -20,6 +18,3 @@ def reading():
             break
     else:
         print(f"A student named {user_name} was not found in the database")
-
-
-#reading()

@@ -1,15 +1,22 @@
 import json
-
+from functions import readData
 
 def reading():
-    def readData(_filename):
-        with open(_filename, "r") as conn:
-            return json.load(conn)
 
-    data = readData("database.json")
+    readData()
+
+    data = readData()
     # print("data : ", data)
+    print("""Student information -> 1
+Teachers information 2""")
+    info = int(input("press 1 or 2 : "))
 
-    for item in data['student']:
-        print(f"Name : {item['name']} \nSurname :  {item['surname']} \n"
-              f"Age :  {item['age']} \nUsername : {item['username']} \nPassword : {item['password']} \n")
+    if info == 1:
+        for item in data['student']:
+            print(f"Name : {item['name']} \nSurname :  {item['surname']} \n"
+                  f"Age :  {item['age']} \nUsername : {item['username']} \nPassword : {item['password']} \n")
+    elif info == 2:
+        for item in data['teachers']:
+            print(f"Name : {item['name']} \nSurname :  {item['surname']} \n"
+                  f"Username : {item['username']} \nPassword : {item['password']} \n")
 

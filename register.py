@@ -1,12 +1,12 @@
 import json
 
 def register():
-    print("Telebe melumatlarini gormek ucun qeydiyyatdan kecmelisiz.")
-    qerar = input("davam etmek ucun 1 eks halda 2 duymesine basin : ")
+    print("You must register to view student information.")
+    qerar = input("Press 1 to continue, otherwise press 2 : ")
     if qerar == "1":
         WritingTeacher()
     else:
-        pass
+        print("Bye!")
 
 
 def WritingTeacher():

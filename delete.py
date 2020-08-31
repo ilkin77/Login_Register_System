@@ -1,23 +1,22 @@
 import json
-
+from functions import readData
+from time import sleep
 
 def deleting():
-    def readData(_filename):
-        with open(_filename, "r") as conn:
-            return json.load(conn)
+    readData()
 
-    data = readData("database.json")
-    print("data read : ", data)
+    data = readData()
+    #print("data read : ", data)
 
-    oldpass = int(input("old password daxil edin : "))
+    oldpass = int(input("write password : "))
 
     for item in data['student']:
         if item['password'] == oldpass:
             data['student'].remove(item)
 
-
+    sleep(2)
     print("Melumat silindi...")
-    print(data)
+   # print(data)
 
     with open("database.json", "w") as conn:
         json.dump(data, conn)

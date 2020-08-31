@@ -14,18 +14,18 @@ def login():
     Ada gore telebe axtarisi      -> 5
         """)
 
-    order = int(input("Choose your number : "))
+    order = input("Choose your number : ")
 
     try:
-        if order == 1:
+        if order == "1":
             reading()
-        elif order == 2:
+        elif order == "2":
             Writing()
-        elif order == 3:
+        elif order == "3":
             deleting()
-        elif order == 4:
+        elif order == "4":
             updating()
-        elif order == 5:
+        elif order == "5":
             pass
         else:
             print("duzgun reqem yazmadiniz.")

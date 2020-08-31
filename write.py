@@ -1,13 +1,14 @@
 import json
+from functions import readData
+
 
 
 def Writing():
-    def readData(_filename):
-        with open(_filename, "r") as conn:
-            return json.load(conn)
 
-    data = readData("database.json")
-    print("data : ", data)
+    readData()
+
+    data = readData()
+    #print("data : ", data)
 
     def getDataFromUser():
         print("Add student")

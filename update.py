@@ -1,13 +1,12 @@
 import json
-
+from functions import readData
+from time import sleep
 
 def updating():
-    def readData(_filename):
-        with open(_filename, "r") as conn:
-            return json.load(conn)
+    readData()
 
-    data = readData("database.json")
-    print("data read : ", data)
+    data = readData()
+    #print("data read : ", data)
 
     oldpass = int(input("old password daxil edin : "))
     newpass = int(input("new password : "))
@@ -16,8 +15,9 @@ def updating():
         if item['password'] == oldpass:
             item['password'] = newpass
 
+    sleep(2)
     print("Melumat deyisdirildi...")
-    print(data)
 
     with open("database.json", "w") as conn:
         json.dump(data, conn)
+
